@@ -1,3 +1,4 @@
+using ASPShopBag.Services;
 using MercedesChasti_ZvezdniChasti.Data;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -16,11 +17,17 @@ namespace MercedesChasti_ZvezdniChasti
                 options.UseSqlServer(connectionString));
             builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
-            builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-                .AddEntityFrameworkStores<ApplicationDbContext>();
+            builder.Services.AddDefaultIdentity<User>(options => options.SignIn.RequireConfirmedAccount = false)
+                .AddRoles<IdentityRole>()
+                .AddEntityFrameworkStores<ApplicationDbContext>()
+                .AddDefaultTokenProviders();
             builder.Services.AddControllersWithViews();
 
+            builder.Services.AddControllers(
+                options =>
+                options.SuppressImplicitRequiredAttributeForNonNullableReferenceTypes = true);
             var app = builder.Build();
+            app.PrepareDataBase().Wait(); 
 
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())

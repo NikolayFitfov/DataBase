@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Nikolay12d\\MercedesChasti-ZvezdniChasti\\MercedesChasti-ZvezdniChasti\\MercedesChasti-ZvezdniChasti.csproj": {}
+    "C:\\Nikolay12d\\MercedesChasti-ZvezdniChasti-Копие\\MercedesChasti-ZvezdniChasti\\MercedesChasti-ZvezdniChasti.csproj": {}
   },
   "projects": {
-    "C:\\Nikolay12d\\MercedesChasti-ZvezdniChasti\\MercedesChasti-ZvezdniChasti\\MercedesChasti-ZvezdniChasti.csproj": {
+    "C:\\Nikolay12d\\MercedesChasti-ZvezdniChasti-Копие\\MercedesChasti-ZvezdniChasti\\MercedesChasti-ZvezdniChasti.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Nikolay12d\\MercedesChasti-ZvezdniChasti\\MercedesChasti-ZvezdniChasti\\MercedesChasti-ZvezdniChasti.csproj",
+        "projectUniqueName": "C:\\Nikolay12d\\MercedesChasti-ZvezdniChasti-Копие\\MercedesChasti-ZvezdniChasti\\MercedesChasti-ZvezdniChasti.csproj",
         "projectName": "MercedesChasti-ZvezdniChasti",
-        "projectPath": "C:\\Nikolay12d\\MercedesChasti-ZvezdniChasti\\MercedesChasti-ZvezdniChasti\\MercedesChasti-ZvezdniChasti.csproj",
+        "projectPath": "C:\\Nikolay12d\\MercedesChasti-ZvezdniChasti-Копие\\MercedesChasti-ZvezdniChasti\\MercedesChasti-ZvezdniChasti.csproj",
         "packagesPath": "C:\\Users\\1212-12\\.nuget\\packages\\",
-        "outputPath": "C:\\Nikolay12d\\MercedesChasti-ZvezdniChasti\\MercedesChasti-ZvezdniChasti\\obj\\",
+        "outputPath": "C:\\Nikolay12d\\MercedesChasti-ZvezdniChasti-Копие\\MercedesChasti-ZvezdniChasti\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -44,7 +44,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -66,9 +66,17 @@
               "target": "Package",
               "version": "[8.0.12, )"
             },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[8.0.11, )"
+            },
             "Microsoft.EntityFrameworkCore.Tools": {
               "target": "Package",
               "version": "[8.0.12, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[8.0.7, )"
             }
           },
           "imports": [
@@ -90,7 +98,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

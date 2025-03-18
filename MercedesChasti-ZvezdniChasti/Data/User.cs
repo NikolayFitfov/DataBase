@@ -6,6 +6,7 @@ namespace MercedesChasti_ZvezdniChasti.Data
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
+        public DateTime DateRegister { get; set; }
         public ICollection<Order> Orders { get; set; }
     }
 }
